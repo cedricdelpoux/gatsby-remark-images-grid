@@ -1,4 +1,4 @@
-import React from "react"
+const React = require("react")
 
 exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
   const className = pluginOptions.className
