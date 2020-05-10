@@ -37,7 +37,7 @@ module.exports = {
                 plugins: [
                     // Make CSS grids available
                     // without options
-                    "gatsby-remark-grid"
+                    "gatsby-remark-images-grid"
                     // or
                     // with options
                     {
