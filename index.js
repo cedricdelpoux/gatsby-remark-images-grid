@@ -11,8 +11,8 @@ module.exports = ({markdownAST}, pluginOptions) => {
     const className = pluginOptions.className
       ? pluginOptions.className
       : "gatsbyRemarkImagesGrid"
-
-    let [, columnsCount, figcaption] = node.lang.split("|")
+    const meta = node.lang + (node.meta ? " " + node.meta : "")
+    let [, columnsCount, figcaption] = meta.split("|")
 
     if (!columnsCount) {
       columnsCount = 1
