@@ -1,4 +1,2 @@
-/index.js
-/gatsby-ssr.js
 node_modules
-yarn-error.log
+*.log

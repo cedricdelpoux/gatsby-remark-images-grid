@@ -3,7 +3,7 @@ const unified = require("unified")
 const markdown = require("remark-parse")
 
 module.exports = ({markdownAST}, pluginOptions) => {
-  visit(markdownAST, "code", (node, index, parent) => {
+  visit(markdownAST, "code", (node) => {
     if (!node.lang || node.lang.indexOf("grid") === -1) {
       return
     }
@@ -11,19 +11,18 @@ module.exports = ({markdownAST}, pluginOptions) => {
     const className = pluginOptions.className
       ? pluginOptions.className
       : "gatsbyRemarkImagesGrid"
+
     let [, columnsCount, figcaption] = node.lang.split("|")
 
     if (!columnsCount) {
       columnsCount = 1
     }
 
-    const contentAST = unified()
-      .use(markdown)
-      .parse(node.value)
+    const contentAST = unified().use(markdown).parse(node.value)
 
     let imagesNodes = []
 
-    visit(contentAST, "image", node => {
+    visit(contentAST, "image", (node) => {
       node.data = {
         hProperties: {
           width: "100%;",
@@ -56,9 +55,9 @@ module.exports = ({markdownAST}, pluginOptions) => {
         hProperties: {
           className: `${className}-grid`,
           style: `
-            grid-template-columns: repeat(auto-fill, minmax(${Math.floor(
-              100 / columnsCount
-            ) - 2}%, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(${
+              Math.floor(100 / columnsCount) - 2
+            }%, 1fr));
           `,
         },
       },
