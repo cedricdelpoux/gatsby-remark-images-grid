@@ -55,7 +55,7 @@ module.exports = {
 }
 ```
 
-> Note: If you use others images remark plugins, put `gatsby-remark-grid` first because images are not images nodes before being wrapped by a grid
+> Note: If you use others images remark plugins, put `gatsby-remark-images-grid` first because images are not images nodes before being wrapped by a grid
 
 2.  Use grid layout in your markdown
 
