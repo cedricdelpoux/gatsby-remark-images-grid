@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-remark-images-grid-example",
+  "private": true,
+  "scripts": {
+    "dev": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^2.24.61",
+    "gatsby-plugin-sharp": "^2.6.36",
+    "gatsby-remark-images": "^3.3.30",
+    "gatsby-source-filesystem": "^2.3.30",
+    "gatsby-transformer-remark": "^2.8.35",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
