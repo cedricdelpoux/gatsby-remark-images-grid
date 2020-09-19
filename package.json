@@ -1,6 +1,6 @@
 {
   "name": "gatsby-remark-images-grid",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "CSS grid layouts for your images made easy in markdown",
   "repository": "https://github.com/xuopled/gatsby-remark-images-grid",
   "author": "Cédric Delpoux",
