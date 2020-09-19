@@ -19,6 +19,10 @@ exports.onRenderBody = ({setHeadComponents}, pluginOptions) => {
           ${pluginOptions.gridGap ? `grid-gap: ${pluginOptions.gridGap}` : ""};
         }
 
+        .${className}-grid > .gatsby-resp-image-wrapper {
+          width: 100%;
+        }
+
         .${className}-figcaption {
           text-align: center;
         }
