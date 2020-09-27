@@ -21,17 +21,17 @@
     "gatsby-ssr.js"
   ],
   "dependencies": {
-    "remark-parse": "^5.0.0",
-    "unified": "^7.0.0",
-    "unist-util-visit": "^1.4.0"
+    "remark-parse": "^8.0.3",
+    "unified": "^9.2.0",
+    "unist-util-visit": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^7.7.0",
-    "eslint-config-prettier": "^6.10.0",
-    "eslint-plugin-react": "^7.20.6",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-react": "^7.21.2",
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
-    "prettier": "2.0.5"
+    "prettier": "2.1.2"
   },
   "peerDependencies": {
     "gatsby": "^2.0.0"
