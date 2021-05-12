@@ -49,7 +49,7 @@ module.exports = ({markdownAST}, pluginOptions) => {
     }
 
     const gridNode = {
-      type: "list",
+      type: "parent",
       data: {
         hName: "div",
         hProperties: {
