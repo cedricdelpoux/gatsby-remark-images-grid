@@ -8,11 +8,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^2.24.61",
-    "gatsby-plugin-sharp": "^2.6.36",
-    "gatsby-remark-images": "^3.3.30",
-    "gatsby-source-filesystem": "^2.3.30",
-    "gatsby-transformer-remark": "^2.8.35",
+    "gatsby": "^4.11.2",
+    "gatsby-plugin-sharp": "^4.11.1",
+    "gatsby-remark-images": "^6.11.1",
+    "gatsby-source-filesystem": "^4.11.1",
+    "gatsby-transformer-remark": "^5.11.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

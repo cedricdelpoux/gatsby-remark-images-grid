@@ -1,7 +1,7 @@
-import React from "react"
 import {graphql} from "gatsby"
+import React from "react"
 
-export default ({data: {post}}) => {
+const Post = ({data: {post}}) => {
   return (
     <>
       <h1>{post.frontmatter.title}</h1>
@@ -10,6 +10,8 @@ export default ({data: {post}}) => {
     </>
   )
 }
+
+export default Post
 
 export const pageQuery = graphql`
   query Post($path: String!) {
