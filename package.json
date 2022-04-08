@@ -26,15 +26,12 @@
     "unist-util-visit": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^7.10.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-react": "^7.21.2",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.29.4",
     "husky": "^4.2.1",
-    "lint-staged": "^10.0.7",
-    "prettier": "2.1.2"
-  },
-  "peerDependencies": {
-    "gatsby": "^2.0.0"
+    "lint-staged": "^12.3.7",
+    "prettier": "2.6.2"
   },
   "scripts": {
     "lint": "eslint index.js gatsby-ssr.js example",
