@@ -1,5 +1,6 @@
 const visit = require("unist-util-visit")
-const fromMarkdown = require("mdast-util-from-markdown")
+const unified = require("unified")
+const markdown = require("remark-parse")
 
 module.exports = ({markdownAST}, pluginOptions) => {
   visit(markdownAST, "code", (node) => {
@@ -17,7 +18,7 @@ module.exports = ({markdownAST}, pluginOptions) => {
       columnsCount = 1
     }
 
-    const contentAST = fromMarkdown(node.value)
+    const contentAST = unified().use(markdown).parse(node.value)
 
     let imagesNodes = []
 
