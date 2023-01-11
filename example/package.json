@@ -12,7 +12,7 @@
     "gatsby-plugin-sharp": "^4.11.1",
     "gatsby-remark-images": "^6.11.1",
     "gatsby-source-filesystem": "^4.11.1",
-    "gatsby-transformer-remark": "^5.11.1",
+    "gatsby-transformer-remark": "^5.25.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
